@@ -12,6 +12,8 @@
 
   @while (have_posts()) @php the_post() @endphp
     @include('partials.content-'.get_post_type())
+    <br>
+    @include('kr-icon::unicorn', ['color'=>'#ff0000'])
   @endwhile
 
   {!! get_the_posts_navigation() !!}
